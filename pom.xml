@@ -18,6 +18,20 @@
             <artifactId>junit-jupiter</artifactId>
             <version>5.7.1</version>
         </dependency>
+<<<<<<< HEAD
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+=======
+>>>>>>> 1ede561a4968bf0cb609e7b1a6c8e64e45d59609
     </dependencies>
 
     <properties>
@@ -26,4 +40,8 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
+<<<<<<< HEAD
 </project>
+=======
+</project>
+>>>>>>> 1ede561a4968bf0cb609e7b1a6c8e64e45d59609
