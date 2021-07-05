@@ -11,9 +11,7 @@ import java.net.http.HttpResponse;
 public abstract class Abstract {
 
     private final HttpClient client = HttpClient.newHttpClient();
-    /**
-     * Send POST request
-     */
+
     public JSONObject sendPOSTRequest(String url, JSONObject obj) throws IOException, InterruptedException {
         HttpRequest requetePost = HttpRequest.newBuilder()
             .uri(URI.create(url))
@@ -26,17 +24,4 @@ public abstract class Abstract {
         return new JSONObject(response.body());
     }
 
-    /**
-     * Send GET request
-     */
-    public JSONObject sendGETRequest(String url) throws IOException, InterruptedException {
-        HttpRequest requeteGET = HttpRequest.newBuilder()
-            .uri(URI.create(url))
-            .setHeader("Accept", "application/json")
-            .GET()
-            .build();
-
-        var response = client.send(requeteGET, HttpResponse.BodyHandlers.ofString());
-        return new JSONObject(response.body());
-    }
 }
