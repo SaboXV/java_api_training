@@ -1,7 +1,6 @@
 package fr.lernejo.navy_battle.Prototypes;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Maps {
     private final Integer[] BOATS = {5, 4, 3, 3, 2};

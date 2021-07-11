@@ -5,7 +5,6 @@ public enum GameCell {
     MISSED_FIRE("-"),
     SUCCESSFUL_FIRE("X"),
     BOAT("B");
-
     private final String letter;
 
     GameCell(String letter) {

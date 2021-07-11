@@ -18,9 +18,7 @@ public class Info {
     public String getId() {
         return id;
     }
-
     public String getUrl() {
-
         return url;
     }
     public String getMessage() {

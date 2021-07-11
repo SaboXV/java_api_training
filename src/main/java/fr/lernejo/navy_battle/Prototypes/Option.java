@@ -2,7 +2,6 @@ package fr.lernejo.navy_battle.Prototypes;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class Option<T> {
     private final List<T> list = new ArrayList<>();
 

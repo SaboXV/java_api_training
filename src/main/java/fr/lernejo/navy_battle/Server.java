@@ -39,8 +39,6 @@ public class Server extends Abstract {
             os.write(body.getBytes());
         }
     }
-
-
     public void startGame(RequestHandler handler) throws IOException {
         try {
             remoteServer.set(Info.fromJSON(handler.getJSONObject()));
