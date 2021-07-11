@@ -19,9 +19,17 @@ public abstract class Abstract {
             .setHeader("Content-Type", "application/json")
             .POST(HttpRequest.BodyPublishers.ofString(obj.toString()))
             .build();
-
         var response = client.send(requetePost, HttpResponse.BodyHandlers.ofString());
         return new JSONObject(response.body());
     }
 
+    public JSONObject sendGETRequest(String url) throws IOException, InterruptedException {
+        HttpRequest requeteGET = HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .setHeader("Accept", "application/json")
+            .GET()
+            .build();
+        var response = client.send(requeteGET, HttpResponse.BodyHandlers.ofString());
+        return new JSONObject(response.body());
+    }
 }

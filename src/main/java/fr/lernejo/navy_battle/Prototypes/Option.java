@@ -17,4 +17,11 @@ public class Option<T> {
 
         return list.get(0);
     }
+    public boolean isEmpty() {
+        return  list.isEmpty();
+    }
+
+    public boolean isNotEmpty() {
+        return !isEmpty();
+    }
 }

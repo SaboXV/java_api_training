@@ -15,9 +15,16 @@ public class Info {
         this.message = message;
     }
 
+    public String getId() {
+        return id;
+    }
 
     public String getUrl() {
+
         return url;
+    }
+    public String getMessage() {
+        return message;
     }
 
     public JSONObject toJSON() {
